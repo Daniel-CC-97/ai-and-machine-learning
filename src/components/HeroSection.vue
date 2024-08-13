@@ -6,11 +6,10 @@
         Discover the Future of AI with Our Interactive Showcase
       </h1>
       <p class="text-lg text-gray-400 mb-8">
-        Welcome to <strong>{{ appName }}</strong
-        >, an innovative platform designed to bring the power of artificial
-        intelligence and machine learning to life. Explore a diverse range of
-        cutting-edge technologies through our interactive and user-friendly
-        interface.
+        Welcome to an innovative platform designed to bring the power of
+        artificial intelligence and machine learning to life. Explore a diverse
+        range of cutting-edge technologies through our interactive and
+        user-friendly interface.
       </p>
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         <router-link
