@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from "vue-router";
+
+// Import the components
 import HomeView from "../views/HomeView.vue";
 
+// Define routes with lazy-loaded components for AI/ML features
 const routes: Array<RouteRecordRaw> = [
   {
     path: "/",
@@ -8,13 +11,29 @@ const routes: Array<RouteRecordRaw> = [
     component: HomeView,
   },
   {
-    path: "/about",
-    name: "about",
-    // route level code-splitting
-    // this generates a separate chunk (about.[hash].js) for this route
-    // which is lazy-loaded when the route is visited.
-    component: () =>
-      import(/* webpackChunkName: "about" */ "../views/AboutView.vue"),
+    path: "/image-classification",
+    name: "image-classification",
+    component: () => import("../views/ImageClassification.vue"),
+  },
+  {
+    path: "/text-generation",
+    name: "text-generation",
+    component: () => import("../views/TextGeneration.vue"),
+  },
+  {
+    path: "/sentiment-analysis",
+    name: "sentiment-analysis",
+    component: () => import("../views/SentimentAnalysis.vue"),
+  },
+  {
+    path: "/object-detection",
+    name: "object-detection",
+    component: () => import("../views/ObjectDetection.vue"),
+  },
+  {
+    path: "/recommendation-system",
+    name: "recommendation-system",
+    component: () => import("../views/RecommendationSystem.vue"),
   },
 ];
 
